@@ -1,0 +1,74 @@
+
+.about {
+	padding-bottom: 10px
+}
+.about .about-single:nth-child(odd) {
+	background: #f6f6f6 url(../images/solute/about01-bg.png) no-repeat 100% 0
+}
+.about .about-single .row {
+	overflow: hidden
+}
+.about .about-single .row>div {
+	position: relative;
+	height: 451px;
+	text-align: center;
+	font-family: Microsoft YaHei, sans-serif
+}
+.about .about-single .about-details, .about .about-single .about-img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 50%;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+	width: 100%;
+}
+.about .about-single .about-details{
+	width: 85%;
+	margin-left: 5%;
+	color: #5b5b5b;
+}
+.about .about-single h3 {
+	margin-top: 0;
+	font-family: 宋体;
+	font-weight: 700;
+	text-align: left;
+	padding-bottom: 16px;
+
+}
+.about .about-single .class {
+	border-bottom: 2px solid #f6d000;
+	width: 123px;
+}
+.about .about-single h4 {
+	margin-bottom: 40px;
+	color: #b8b8b8;
+	font-family: 宋体;
+	text-align: left;
+}
+.about .about-single p {
+	color: #737373;
+	font-size: 14px;
+	font-family: 宋体;
+	line-height: 1.7;
+	text-align: left;
+}
+.about .about-single:nth-child(odd) {
+	background: #fff;
+}
+.about .about-single:nth-child(2n+2) {
+	background: #f3f3f3;
+}
+.about .about-single .container .row .class :nth-child(0) {
+	background: red;
+}
+.service {
+	margin-top: 104px;
+	margin-bottom: 111px;
+}
+.service a{
+	color:#636363;
+}
+.service a:hover{
+	color: #dab313;
+}

@@ -1,0 +1,157 @@
+/*ul重置*/
+ul,li{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.kong64{
+	height: 64px;
+}
+.kong75{
+	height: 75px;
+}
+/*当前位置*/
+.news{
+	margin-bottom: 40px; 
+}
+.news .location{
+	height: 60px;
+	line-height: 60px;
+}
+.news .location p{
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #6f7071;
+}
+.title{
+	margin-bottom: 10px;
+}
+/*列表部分*/
+.news_list{
+	margin-top:30px;
+}
+.news_list li{
+	margin-top: 30px;
+}
+.news_list .first{
+	margin-top: 0;
+}
+.news_list li h2,.news_list li h3,.news_list li h4,.news_list li p,.news_list li a{
+	font-family: '微软雅黑';
+	margin:0;
+}
+.news_list li h2{
+	line-height: 15px;
+	font-size: 45px;
+	color: #908f8f;
+	margin-top: 30px;
+}
+.news_list li h3{
+	line-height: 15px;
+	
+	color: #424141;
+	margin-top: 25px;
+
+}
+.news_list li h4{
+	margin-top: 40px;
+	line-height: 15px;
+	
+	color: #232323;
+}
+.news_list li p{
+	line-height: 25px;
+	
+	color: #666;
+	margin-top: 15px;
+
+}
+.news_list .news li a{
+	display: block;
+	margin-top:20px;
+	width: 130px;
+	height: 45px;
+	background-color: #fff;
+	color: #666;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	/*font-family: LEARN MORE;*/
+	border:1px solid #959595;
+	font-weight: bold;
+}
+.news_list .news li a:hover{
+	text-decoration: none;
+}
+.news_list .news li .active{
+	background-color: #f5de5a;
+	color: #fff;
+	border:none;
+}
+.news_list .img_left .img{
+	padding-left:0;
+}
+.news_list .img_right .img,.news_list .img_right .content{
+	float: right;
+}
+/*分页page*/
+.page{
+	float:none;
+	margin:0 auto;
+	text-align: center;
+}
+.page li{
+	float: left;
+	line-height: 30px;
+	margin-right: 6%;
+	cursor: pointer;
+	
+
+}
+.page li a{
+	
+	font-size: 30px;
+	color: #707070;
+	/* padding: 3px 1px; */
+}
+.page li a:hover{
+	text-decoration: none;
+	color:#fff;
+	background:#f6ce2a;
+}
+.page .prev,.page .next{
+	height: 40px;
+	width: 40px;
+	border:4px solid #707070;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 26px;
+	text-align: center;
+	margin-top: 25px;
+}
+.page .next{
+	margin-right:0;
+}
+.page .prev a:hover,.page .next a:hover{
+	color: #707070;
+}
+@media screen and (min-width:992px) {
+	html{
+		font-size:12px;
+	}
+}
+@media screen and (min-width:1280px) {
+	html{
+		font-size:14px;
+	}
+}
+@media screen and (min-width:1600px) {
+	html{
+		font-size:16px;
+	}
+}
+@media screen and (min-width:1920px) {
+	html{
+		font-size:18px;
+	}
+}

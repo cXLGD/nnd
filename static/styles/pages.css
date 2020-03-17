@@ -1,0 +1,42 @@
+/*分页page*/
+.mypage{
+	float:none;
+	margin:0 auto;
+	text-align: center;
+}
+.mypage li{
+	float: left;
+	font-size: 1.5rem;
+	line-height: 2.2rem;
+	margin-right: 6%;
+	cursor: pointer;
+}
+.mypage li a{
+	color: #707070;
+	padding: 3px 0.625rem;
+}
+.mypage li a:hover{
+	text-decoration: none;
+	color:#fff;
+	background:#f6ce2a;
+}
+.mypage .prev,.mypage .next{
+	height: 2.2rem;
+	width: 2.2rem;
+	border:4px solid #707070;
+	border-radius: 1.1rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+	text-align: center;
+}
+.mypage .next{
+	margin-right:0;
+}
+.mypage .prev a:hover,.mypage .next a:hover{
+    background: none;
+	color: #707070;
+}
+.mypage li.active{
+    background-color: #f6ce2a;
+}

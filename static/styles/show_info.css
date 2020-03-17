@@ -1,0 +1,43 @@
+/*作品展示详细页*/
+
+/*当前位置*/
+.location{
+	margin-bottom: 40px; 
+}
+.location .position{
+	height: 45px;
+	line-height: 45px;
+}
+.location .position p{
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #6f7071;
+}
+.location .position p span:nth-child(3){
+	color: #ffdb48;
+}
+.title{
+	margin-bottom: 10px;
+}
+
+.service .description p.desc{
+	font-size: 14px;
+    font-family: 'Microsoft Yahei';
+    color: #999;
+    margin: 60px auto;
+    text-indent: 28px;
+}
+.service .page{
+	margin: 30px auto 140px;
+}
+
+.service .prev p{
+	text-align: right;
+}
+.service .next p{
+	text-align: left;
+}
+.service p a{
+	color: #5b5b5b;
+}
+

@@ -1,0 +1,49 @@
+/*关于我们*/
+.info{
+	margin-bottom: 40px; 
+}
+.info .location{
+	height: 60px;
+	line-height: 60px;
+}
+.info .location p{
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #6f7071;
+}
+/*.info .description {
+	height: 370px;
+}*/
+.info .description>h1{
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Microsoft Yahei';
+	color: #232323;
+}
+.info .description>h2{
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #666;
+}
+.info .description p{
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #999;
+	margin: 30px auto;
+	text-indent: 28px;
+}
+.info .description>a{
+	display: inline-block;
+	padding: 10px 30px;
+	color: #fff;
+	background-color: #f6ce2a;
+}
+.info .description .link{
+	float: right;
+}
+.info .description .link a{
+	font-size: 18px;
+	font-family: 'Microsoft Yahei';
+	color: #333;
+}

@@ -1,0 +1,108 @@
+<!--加载 .css样式表-->
+<link rel="stylesheet" href="<?php echo CSS_DIR; ?>news.css">
+
+<!-- <section class="banner">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="<?php echo IMG_DIR; ?>public/banner2.jpg">
+      </div>
+    </div>
+</section> -->
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="location col-md-11 col-md-offset-1 col-md-11 col-md-offset-1">
+        <p>当前位置：<span>资讯中心</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="title">
+  <div class="container titled">
+    <h1>我们的资讯中心</h1>
+    <h3>NEWS CENTER</h3>
+  </div>
+</section>
+<section class="news_list">
+  <div class="container">
+    <div class="row col-xs-12 col-sm-11 col-md-11 col-lg-11 col-sm-offset-1 col-md-offset-1 col-lg-offset-1 news">
+      <ul>
+          <!-- <li class="img_left first">
+              <img src="images/news_center/news_one.png" alt="" class="img col-md-6 col-sm-12 col-xs-12">
+              <div class="content col-md-6 col-sm-12 col-xs-12">
+                <h2>01-09</h2>
+                <h3>2016</h3>
+                <h4>总结2015，展望2016，文豆继续创造辉煌2015年会回顾</h4>
+                <p>回顾2015年，在整个经济大环境不好的情况下，但是我们文豆人创造了很多优异的成绩，这是所有文豆人一起努力的结果。2016年，我们一定会继续创造辉煌，为更多人提供专业的IT服务，文豆值得你信赖。</p>
+                <a href="#" class="active">MORE</a>
+              </div>
+            </li>
+            <div class="clearfix"></div>
+            <li class="img_right">
+              <img src="images/news_center/news_two.png" alt="" class="img col-md-6 col-sm-12 col-xs-12">
+              <div class="content col-md-6 col-sm-12 col-xs-12">
+                <h2>01-09</h2>
+                <h3>2016</h3>
+                <h4>Ghost 博客中文版0.5.5正式发布</h4>
+                <p>Ghost 官方昨日正式发布Ghost-0.5.5版本，并公布0.6版RodeMap。计划完善Ghost API、站点地图等功能。由点云DianCloud本地化的Ghost博客中文版本0.5.5源码Docker Image同日发布。</p>
+                <a href="#">MORE</a>
+              </div>
+            </li>
+            <div class="clearfix"></div> -->
+
+        <?php foreach($info as $key=>$item){
+          
+          if($key % 2 == 0){
+        ?>
+        <li class="img_left ">
+          <img src="<?php echo ROOT.'/admin/'.$item['info_img'];  ?>" alt="" class="img col-md-6 col-sm-12 col-xs-12">
+          <div class="content col-md-6 col-sm-12 col-xs-12">
+            <h2><?php echo date("m-d",$item['info_time']); ?></h2>
+            <h3><?php echo date("Y",$item['info_time']); ?></h3>
+            <h4><?php echo $item["info_title"]; ?></h4>
+            <p><?php echo $item["info_content"]; ?></p>
+            <a href="#" class="active">MORE</a>
+          </div>
+        </li>
+        <div class="clearfix"></div>
+        <?php }else{ ?>
+        <li class="img_right">
+          <img src="<?php echo ROOT.'/admin/'.$item['info_img'];  ?>" alt="" class="img col-md-6 col-sm-12 col-xs-12">
+          <div class="content col-md-6 col-sm-12 col-xs-12">
+            <h2><?php echo date("m-d",$item['info_time']); ?></h2>
+            <h3><?php echo date("Y",$item['info_time']); ?></h3>      
+            <h4><?php echo $item['info_title']; ?></h4>
+            <p><?php echo $item['info_content']; ?></p>
+            <a href="#" class="active">MORE</a>
+          </div>
+        </li>
+        <div class="clearfix"></div>
+        <?php }
+        } ?>
+      </ul>
+    </div>
+
+
+    <div class="clearfix"></div>
+    <div class="kong64"></div>
+    <div class="row col-md-6 col-sm-8 col-xs-8 page">
+      <link rel="stylesheet" href="<?php echo CSS_DIR; ?>page.css">
+      <!--<div class="mypage">
+        <ul>
+           <li class="prev">
+            <</li> <li><a href="">1</a>
+          </li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li><a href="">...</a></li>
+          <li><a href="">10</a></li>
+          <li class="next">></li> 
+        </ul>
+      </div>-->
+      <?php echo $page; ?>
+    </div>
+    <div class="kong75"></div>
+  </div>
+</section>

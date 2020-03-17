@@ -1,0 +1,134 @@
+/*当前位置*/
+.location{
+	margin-bottom: 40px; 
+}
+.location .position{
+	height: 45px;
+	line-height: 45px;
+}
+.location .position p{
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	color: #6f7071;
+}
+.location .position p span:nth-child(2){
+	color: #ffdb48;
+}
+.title{
+	margin-bottom: 10px;
+}
+
+/*选项卡 点击部分*/
+.cases .container .nav{
+	margin:0 auto;
+	border:none;
+}
+.cases .container .nav>li{
+	text-align: center;
+}
+.cases .container .nav-tabs>li.active>a{
+	border:1px solid #fff;
+}
+.cases .container .nav-tabs>li a .type{
+	width: 236px;
+	height: 130px;
+    transition: all .5s;
+}
+.cases .container .nav-tabs>li a .commerce{
+	background-image: url(../images/show/case1.jpg);
+}
+.cases .container .nav-tabs>li a .portal{
+	background-image: url(../images/show/case2.jpg);
+}
+.cases .container .nav-tabs>li a .brand{
+	background-image: url(../images/show/case1.jpg);
+}
+.cases .container .nav-tabs>li a:after{
+	content: "";
+    width: 0;
+}
+.cases .container .nav-tabs .type .type-detail{
+	height: 130px;
+	color: #fff;
+	background-color: rgba(0,0,0,.4);
+	padding-top: 25px;
+}
+.cases .container .nav-tabs .type .type-detail h3{
+	font-size: 20px;
+}
+.cases .container .nav-tabs .type .type-detail span{
+	font-size: 20px;
+}
+.cases .container .nav-tabs>li a:hover .type{
+	zoom:1;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #ccc;
+}
+.cases .container .nav-tabs>li a:hover{
+	border:1px solid transparent;
+}
+
+/*案例内容*/
+.cases .tab-content{
+	margin-top: 30px;
+}
+.cases .tab-content .case-content{
+	list-style: none;
+}
+.cases .tab-content .case-content>li{
+	text-align: center;
+	/*border:1px solid #000;*/
+	margin-bottom: 50px;
+	padding: 10px;
+}
+.cases .tab-content .case-content .case-detail{
+	border:1px solid #dbdbdb;
+	box-shadow: 0px 0px 10px #dbdbdb;
+	transition: all .5s;
+}
+.cases .tab-content .case-content .case-detail:hover{
+	zoom:1;
+    transform: scale(1.05);
+}
+.cases .tab-content .case-content>li img{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	border-bottom: 1px solid #e2e2e2;
+}
+.cases .tab-content .case-content .case-detail>h1{
+	font-size: 27px;
+	color: #5b5b5b;
+	position: relative;
+	font-weight: 400
+}
+.cases .tab-content .case-content .case-detail>h1:after{
+	content: "";
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	width: 100px;
+	height: 2px;
+	background-color: #ffce05;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+.cases .tab-content .case-content .case-detail>p{
+	margin-top: 20px;
+	font-size: 13px;
+	color: #5b5b5b;
+}
+/*加载更多按钮*/
+.cases .tab-content .tab-pane{
+	text-align: center;
+}
+.cases .tab-content .tab-pane a{
+	padding: 10px;
+    color: #fff7d4;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #f6ce2a;
+    display: inline-block;
+    margin-bottom: 40px;
+    border:none;
+}

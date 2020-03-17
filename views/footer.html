@@ -1,0 +1,35 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 footer-left">
+                <img src="<?php echo IMG_DIR; ?>public/footer-left.png" alt="">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <ul class="footer-nav">
+                    <!-- <li><a href="">解决方案</a></li> -->
+                    <?php foreach($nav as $item){ 
+                        if($current_url == $item['nav_url']) continue;
+                        ?>
+                        <li>
+                            <a href="<?php echo $item['nav_url']; ?>">
+                                <?php echo $item['nav_name']; ?>
+                            </a>
+                        </li>
+                    <?php } ?>
+                </ul>
+                <div class="footer-contacts">
+                    <p><img src="<?php echo IMG_DIR; ?>public/footer-locate.png" alt="">
+                        <?php echo $config['config_addr']; ?></p>
+                    <p><img src="<?php echo IMG_DIR; ?>public/footer-copy.png" alt=""><span class="copyright">
+                            <?php echo $config['config_copy']; ?></span></p>
+                    <p class="info"><?php echo $config['config_beian']; ?><span></span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

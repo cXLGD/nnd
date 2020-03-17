@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>牛牛豆</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+    <link rel="stylesheet" href="<?php echo CSS_DIR; ?>vendor.css">
+
+    <link rel="stylesheet" href="<?php echo CSS_DIR; ?>public.css">
+    <link rel="stylesheet" href="<?php echo CSS_DIR; ?>index.css">
+</head>
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand">
+                <img src="<?php echo IMG_DIR; ?>/public/logo.png" alt="">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li class="active"><a href="#">首页</a></li> -->
+               <?php foreach($nav as $item){ ?>
+                    <li class=" <?php echo $item['nav_url'] == $current_url ? 'active':''; ?> ">
+                        <a href="<?php echo $item['nav_url']; ?>">
+                            <?php echo $item['nav_name']; ?>
+                        </a>
+                    </li>
+               <?php } ?>
+            </ul>
+        </div>
+    </div>
+</nav>

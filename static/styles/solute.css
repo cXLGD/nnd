@@ -1,0 +1,94 @@
+.solute-banner {
+	padding-top: 55px;
+	text-align: center;
+	background-color: #f6ce2a
+}
+.solute-banner>.container>h1 {
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: 700
+}
+.solute-banner>.container>h5 {
+	margin-bottom: 50px;
+	color: #fff;
+	font-size: 18px
+}
+.link {
+	padding: 40px 0;
+	text-align: center;
+	font-size: 0
+}
+.link ul {
+	/*margin: 0;*/
+	/*padding-left: 0;*/
+	font-size: 16px;
+	list-style-type: none;
+	display: inline-block
+}
+.link ul>li {
+	float: left
+}
+.link ul>li>a {
+	margin: 0 30px;
+	padding: 0 10px;
+	color: #333;
+	font-family: Microsoft YaHei, sans-serif;
+	text-decoration: none;
+	transition: color .35s;
+
+	margin-left: 0;
+	margin-right: 0;
+	letter-spacing: normal;
+	display: inline;
+	font-size: 14px;
+}
+.link ul>li>a:hover {
+	color: #f6ce2a
+}
+.intro {
+	padding-bottom: 10px
+}
+.intro .intro-single:nth-child(odd) {
+	background: #f6f6f6 url(../images/solute/intro01-bg.png) no-repeat 100% 0
+}
+.intro .intro-single:nth-child(2n+3) {
+	background-image: url(../images/solute/intro03-bg.png)
+}
+.intro .intro-single:nth-child(2n+5) {
+	background-image: url(../images/solute/intro05-bg.png)
+}
+.intro .intro-single .row {
+	overflow: hidden
+}
+.intro .intro-single .row>div {
+	position: relative;
+	height: 450px;
+	text-align: center;
+	font-family: Microsoft YaHei, sans-serif
+}
+.intro .intro-single .intro-details, .intro .intro-single .intro-img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 50%;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%)
+}
+.intro .intro-single h3 {
+	margin-top: 0;
+	font-family: inherit;
+	font-weight: 700
+}
+.intro .intro-single h4 {
+	margin-bottom: 40px;
+	color: #666;
+	font-family: inherit
+}
+.intro .intro-single p {
+	margin: 0 auto;
+	width: 75%;
+	color: #666;
+	font-size: 14px;
+	font-family: inherit;
+	line-height: 1.8
+}

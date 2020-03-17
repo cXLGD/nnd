@@ -1,0 +1,17 @@
+<section class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <?php foreach($banner as $item){ ?>
+                    <div class="swiper-slide">
+                        <img src="<?php echo ROOT.'/admin/'.$item['ban_url']; ?>" alt="">
+                    </div>
+                <?php }?>   
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+<script src="<?php echo JS_DIR; ?>vendor.js"></script>
+
+<script src="<?php echo JS_DIR; ?>plugins.js"></script>
+
+<script src="<?php echo JS_DIR; ?>public.js"></script>
