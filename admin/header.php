@@ -137,7 +137,7 @@
                         <li class="<?php if($bantype=='' && $current_url=='ban_list.php'){echo 'active';} ?>"><a href="ban_list.php"><span class="glyphicons glyphicon-record"></span> 所有广告</a></li>									
 						<?php foreach($ban_type as $value){?>
 						<li class="<?php if($value['ban_type_id']==$bantype){echo 'active';} ?>">	
-						<a href="?ban_type=<?php echo $value['ban_type_id'];?>">
+						<a href="ban_list.php?ban_type=<?php echo $value['ban_type_id'];?>">
 							<span class="glyphicons glyphicon-record"></span>
 							<?php echo $value['ban_type_name']; ?>
 						</a></li>
@@ -158,7 +158,7 @@
                         <li class="<?php if($servtype=='' && $current_url=='serv_list.php'){echo 'active';} ?>"><a href="serv_list.php"><span class="glyphicons glyphicon-record"></span> 所有服务</a></li>									
 						<?php foreach($serv_type as $value){?>
 						<li class="<?php if($value['serv_type_id']==$servtype){echo 'active';} ?>">	
-						<a href="?serv_type=<?php echo $value['serv_type_id'];?>">
+						<a href="serv_list.php?serv_type=<?php echo $value['serv_type_id'];?>">
 							<span class="glyphicons glyphicon-record"></span>
 							<?php echo $value['serv_type_name']; ?>
 						</a></li>
@@ -180,34 +180,11 @@
                         <li class="<?php if($type=='' && $current_url=='info_list.php'){echo 'active';} ?>"><a href="info_list.php"><span class="glyphicons glyphicon-record"></span> 所有资讯</a></li>
                         <?php foreach($info_type as $value){?>
 						<li class="<?php if($value['info_type_id']==$type){echo 'active';} ?>">
-						<a href="?info_type=<?php echo $value['info_type_id'];?>">
+						<a href="info_list.php?info_type=<?php echo $value['info_type_id'];?>">
 							<span class="glyphicons glyphicon-record"></span>
 							<?php echo $value['info_type_name']; ?>
 						</a></li>
 						<?php }?>
-						
-						<!--<li>
-                            <a href="#sideEight-sub" class="accordion-toggle menu-open">
-                                <span class="glyphicons glyphicon-record"></span>
-                                科技<span class="caret"></span>
-                            </a>
-							<ul class="nav sub-nav" id="sideEight-sub" style="">
-                                <li><a href="article_list.html"><span class="glyphicons glyphicon-minus"></span>
-                                        互联网</a>
-                                </li>
-                                <li><a href="#"><span class="glyphicons glyphicon-minus"></span>
-                                        数码</a>
-                                </li>
-                                <li><a href="#"><span class="glyphicons glyphicon-minus"></span>
-                                        IT</a>
-                                </li>
-                                <li><a href="#"><span class="glyphicons glyphicon-minus"></span>
-                                        电信</a>
-                                </li>
-							</ul>
-						</li>
-						<li><a href="#"><span class="glyphicons glyphicon-record"></span> 文化</a></li>
-						<li><a href="#"><span class="glyphicons glyphicon-record"></span> 生活</a></li>-->
 					</ul>
 				</li>
 
@@ -224,7 +201,7 @@
                         <li class="<?php if($casetype=='' && $current_url=='case_list.php'){echo 'active';} ?>"><a href="case_list.php"><span class="glyphicons glyphicon-record"></span> 所有案例</a></li>									
 						<?php foreach($case_type as $value){?>
 						<li class="<?php if($value['case_type_id']==$casetype){echo 'active';} ?>">	
-						<a href="?case_type=<?php echo $value['case_type_id'];?>">
+						<a href="case_list.php?case_type=<?php echo $value['case_type_id'];?>">
 							<span class="glyphicons glyphicon-record"></span>
 							<?php echo $value['case_type_name1']; ?>
 						</a></li>
@@ -271,12 +248,6 @@
 					<a href="cate_list.php"><span class="glyphicons glyphicon-list"></span><span class="sidebar-title">文章分类管理</span></a>
 				</li>
 
-				<!-- 系统管理员 -->
-				<!-- <li class="<?php //if($current_url == 'user_list.php'){ echo 'active';} ?>">
-					<a href="user_list.php">
-						<span class="glyphicons glyphicon-list"></span>
-						<span class="sidebar-title">系统管理员</span></a>
-				</li> -->
 				<li class="<?php if($current_url == 'user_list.php'){ echo 'active';} ?>">
                     <a href="user_list.php" class="accordion-toggle <?php if($current_url == 'user_list.php'){ echo 'menu-open';} ?>">
 						<span class="glyphicons glyphicon-list"></span>
@@ -284,15 +255,7 @@
 						<span class="caret"></span>
                     </a>
 					<ul class="nav sub-nav" id="sideEight" style="">
-                        <li class="<?php if($admintype=='' && $current_url=='user_list.php'){echo 'active';} ?>"><a href="user_list.php"><span class="glyphicons glyphicon-record"></span> 所有管理员</a></li>									
-						<!-- <?php //foreach($admin as $value){?>
-						<li class="<?php //if($value['admin_id']==$admintype){echo 'active';} ?>">	
-						<a href="?admin_type=<?php //echo $value['admin_id'];?>">
-							<span class="glyphicons glyphicon-record"></span>
-							<?php //echo ""; ?>
-						</a></li>
-						<?php  //}?> -->
-						
+                        <li class="<?php if($admintype=='' && $current_url=='user_list.php'){echo 'active';} ?>"><a href="user_list.php"><span class="glyphicons glyphicon-record"></span> 所有管理员</a></li>	
 					</ul>
 				</li>
 				

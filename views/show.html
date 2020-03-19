@@ -71,7 +71,7 @@
             ?>
           <li class="col-md-6 col-lg-4 col-sm-6 col-xs-12">
             <div class="case-detail">
-              <img src="<?php echo ROOT.$item['case_img'];?>">
+              <a href="show_info.php?cases_id=<?php echo $item['case_id']; ?>" style="background-color:#fff;margin-bottom: 0;"><img src="<?php echo ROOT.$item['case_img'];?>"></a>
               <h1><?php echo $item['case_name']; ?></h1>
               <p><?php echo $item['case_desc']; ?></p>
             </div>

@@ -13,7 +13,7 @@
 	 */
 	$host = 'localhost';
 	$user = 'root';
-	$passwd = '';
-	$dbname = 'nndou';
+	$passwd = '123456';
+	$dbname = 'nnd';
 
 	db_connct($host,$user,$passwd,$dbname);

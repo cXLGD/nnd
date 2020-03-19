@@ -13,9 +13,9 @@
 
 	$dbms='mysql';     //数据库类型
 	$host='localhost'; //数据库主机名
-	$dbName='nndou';    //使用的数据库
+	$dbName='nnd';    //使用的数据库
 	$dbuser='root';      //数据库连接用户名
-	$dbpass= '';          //对应的密码
+	$dbpass= '123456';          //对应的密码
 	$dsn="$dbms:host=$host;dbname=$dbName";
 
 	if(isset($_POST['login'])){
@@ -63,7 +63,7 @@
             setcookie('isLogin',1,time()+60*10,'/');
             echo '<script> alert("欢迎你");   </script>';
 
-            header("refresh:1,http://www.nndou.com/admin");
+            header("refresh:1,http://www.nnd.io/admin");
             exit;
 
         }else{

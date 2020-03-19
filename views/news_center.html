@@ -62,7 +62,7 @@
             <h3><?php echo date("Y",$item['info_time']); ?></h3>
             <h4><?php echo $item["info_title"]; ?></h4>
             <p><?php echo $item["info_content"]; ?></p>
-            <a href="#" class="active">MORE</a>
+            <a href="show_info.php?info_id=<?php echo $item['info_id']; ?>" class="active">MORE</a>
           </div>
         </li>
         <div class="clearfix"></div>
@@ -74,7 +74,7 @@
             <h3><?php echo date("Y",$item['info_time']); ?></h3>      
             <h4><?php echo $item['info_title']; ?></h4>
             <p><?php echo $item['info_content']; ?></p>
-            <a href="#" class="active">MORE</a>
+            <a href="show_info.php?info_id=<?php echo $item['info_id']; ?>" class="active">MORE</a>
           </div>
         </li>
         <div class="clearfix"></div>
@@ -88,19 +88,6 @@
     <div class="kong64"></div>
     <div class="row col-md-6 col-sm-8 col-xs-8 page">
       <link rel="stylesheet" href="<?php echo CSS_DIR; ?>page.css">
-      <!--<div class="mypage">
-        <ul>
-           <li class="prev">
-            <</li> <li><a href="">1</a>
-          </li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">4</a></li>
-          <li><a href="">...</a></li>
-          <li><a href="">10</a></li>
-          <li class="next">></li> 
-        </ul>
-      </div>-->
       <?php echo $page; ?>
     </div>
     <div class="kong75"></div>

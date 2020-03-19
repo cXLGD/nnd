@@ -32,23 +32,10 @@
     <h1>优购作品展示</h1>
     <div class="row">
       <div class="description col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2">
-        <p class="desc">
-          优购网站品牌旗舰店热销耐克、阿迪达斯、百丽、他她、天美意等知名品牌男鞋女鞋和服装。上优购购物，厂家直销，100%专柜正品，10天退换！
-        </p>
+        <p class="desc"><?php echo $res['case_desc']; ?></p>
         <p>
-          <img src="<?php echo IMG_DIR; ?>show_info/yougou1.jpg" alt="" class="img-responsive" />
-        </p>
-        <p class="desc">
-          优购网站品牌旗舰店热销耐克、阿迪达斯、百丽、他她、天美意等知名品牌男鞋女鞋和服装。上优购购物，厂家直销，100%专柜正品，10天退换！
-        </p>
-        <p>
-          <img src="<?php echo IMG_DIR; ?>show_info/yougou2.jpg" alt="" class="img-responsive" />
-        </p>
-        <p class="desc">
-          优购网站品牌旗舰店热销耐克、阿迪达斯、百丽、他她、天美意等知名品牌男鞋女鞋和服装。上优购购物，厂家直销，100%专柜正品，10天退换！
-        </p>
-        <p>
-          <img src="<?php echo IMG_DIR; ?>show_info/yougou3.jpg" alt="" class="img-responsive" />
+          <!-- <img src="<?php echo IMG_DIR; ?>show_info/yougou1.jpg" alt="" class="img-responsive" /> -->
+          <img src="<?php echo $res['case_img']; ?>" alt="">
         </p>
       </div>
     </div>
