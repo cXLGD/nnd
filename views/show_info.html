@@ -41,15 +41,19 @@
     </div>
 
     <div class="row page">
+      <?php if($prev != ''){ ?>
       <div class="col-xs-4 col-sm-4 prev">
-        <p><a href="">上一个案例</a></p>
+        <p><a href="show_info.php?cases_id=<?php echo $prev['case_id']; ?>">上一个案例</a></p>
       </div>
+      <?php } ?>
       <div class="col-xs-4 col-sm-4 home">
-        <p><a href="">返回首页</a></p>
+        <p><a href="/">返回首页</a></p>
       </div>
+      <?php if($next != ''){ ?>
       <div class="col-xs-4 col-sm-4 next">
-        <p><a href="">下一个案例</a></p>
+        <p><a href="show_info.php?cases_id=<?php echo $next['case_id']; ?>">下一个案例</a></p>
       </div>
+      <?php } ?>
     </div>
   </div>
 </section>

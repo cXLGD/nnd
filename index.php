@@ -9,7 +9,11 @@
 	//服务
 	$condition = 'LIMIT 6';
 	$serv_type = select_all('serv_type','*',$condition);
-	// pre($serv_type);
+
+	// 案例
+	$case_cond = "ORDER BY case_id DESC LIMIT 6";
+	$cases = select_all('cases','case_id,case_img',$case_cond);
+	// pre($cases);
 
 
 

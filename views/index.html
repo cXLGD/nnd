@@ -54,63 +54,19 @@
     <h1>我们历年的心血大作</h1>
     <h3>OUR CASES</h3>
     <div class="row">
+      <?php foreach($cases as $case){ ?>
       <div class="col-xs-12 col-sm-4 content">
         <img src="<?php echo IMG_DIR; ?>index/cases-01.png" alt="">
-        <a href="">
-          <div class="mask">
-            <h2>VERSIA-LUX</h2>
-            <p>网页（web）</p>
-          </div>
-        </a>
-
-      </div>
-      <div class="col-xs-12 col-sm-4 content">
-        <img src="<?php echo IMG_DIR; ?>index/cases-02.png" alt="">
-        <a href="">
+        <a href="show_info.php?cases_id=<?php echo $case['case_id']; ?>">
           <div class="mask">
             <h2>VERSIA-LUX</h2>
             <p>网页（web）</p>
           </div>
         </a>
       </div>
-      <div class="col-xs-12 col-sm-4 content">
-        <img src="<?php echo IMG_DIR; ?>index/cases-03.png" alt="">
-        <a href="">
-          <div class="mask">
-            <h2>VERSIA-LUX</h2>
-            <p>网页（web）</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-4 content">
-        <img src="<?php echo IMG_DIR; ?>index/cases-04.png" alt="">
-        <a href="">
-          <div class="mask">
-            <h2>VERSIA-LUX</h2>
-            <p>网页（web）</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-4 content">
-        <img src="<?php echo IMG_DIR; ?>index/cases-05.png" alt="">
-        <a href="">
-          <div class="mask">
-            <h2>VERSIA-LUX</h2>
-            <p>网页（web）</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-xs-12 col-sm-4 content">
-        <img src="<?php echo IMG_DIR; ?>index/cases-06.png" alt="">
-        <a href="">
-          <div class="mask">
-            <h2>VERSIA-LUX</h2>
-            <p>网页（web）</p>
-          </div>
-        </a>
-      </div>
+      <?php } ?>
     </div>
-    <a href=""><span>LEARN MORE</span></a>
+    <a href="cases.php"><span>LEARN MORE</span></a>
   </div>
 </section>
 <section class="history">
